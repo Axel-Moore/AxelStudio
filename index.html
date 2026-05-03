@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio de Thumbnails para YouTube</title>
+    <meta
+      name="description"
+      content="Portfolio de miniaturas para YouTube con trabajos recientes listos para mostrar a clientes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#portfolio" aria-label="Axel Studio">
+        <svg class="youtube-logo" viewBox="0 0 90 64" aria-hidden="true" focusable="false">
+          <rect width="90" height="64" rx="16" fill="#ff0033" />
+          <path d="M37 22v20l20-10-20-10z" fill="#ffffff" />
+        </svg>
+        <span>Axel Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h1 id="portfolio-title">Trabajos recientes</h1>
+          <p>
+            Selección de miniaturas para YouTube mejoradas, respetando la composición original de
+            sus autores, visualmente atractivas en formato 16:9.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="gallery" aria-live="polite"></div>
+      </section>
+
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title">¿Necesitas thumbnails para tu canal?</h2>
+          <p>
+            Envíame el tema del vídeo, referencias y plazo. Te devuelvo una propuesta clara para que
+            tu contenido entre con fuerza en el feed.
+          </p>
+        </div>
+        <a class="button button-primary" href="mailto:tu-email@ejemplo.com">Escríbeme</a>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Vista ampliada">
+      <button class="lightbox-close" type="button" aria-label="Cerrar visor">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+      <figure>
+        <img id="lightbox-image" src="" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
